@@ -1,0 +1,271 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+body{
+  background-color: #f8f9fa;
+  position: relative;
+}
+
+.container{
+  height: 820px;
+}
+
+.main{
+  height: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main_image{
+  background-image: url("./img/home-phones.png");
+  background-size: 100% 100%;
+  height: 600px;
+  width: 470px;
+  position: relative;
+}
+
+.login{
+  width: 350px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0px;
+}
+
+.form{
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  width: 100%;
+  height: 68%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.logo{
+  background-image: url("./img/Instagram_logo.svg.png");
+  background-size: 100% 100%;
+  width: 175px;
+  height: 55px;
+  margin: 25px 0px;
+}
+
+.inputsandbtn{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input{
+  height: 35px;
+  padding: 5px 10px;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+}
+
+button{
+  height: 32px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  background-color: #47afff;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  margin: 10px 0px;
+}
+
+.or{
+  padding: 10px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.line{
+  border: 1px solid #dee2e6;
+  width: 110px;
+  height: 0px;
+}
+
+.p_or{
+  font-weight: 600;
+  color: #dee2e6;
+}
+
+.facebook{
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0px;
+}
+
+.facebook_logo{
+  width: 18px;
+  height: 18px;
+  background-image: url("./img/124010.png");
+  background-size: 100% 100%;
+}
+
+.login_with_facebook{
+  color: #002952;
+  font-size: 15px;
+}
+
+.forgot_passwd{
+  color: #495057;
+  font-size: 12px;
+  margin: 5px 0px;
+}
+
+.sign_up_cont{
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0px;
+  font-size: 14px;
+}
+
+.sign_up_cont span{
+  color:#47afff;
+  font-weight: 600;
+}
+
+.app{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.get_the_app{
+  margin: 20px 0px;
+}
+
+.places{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.google{
+  height: 40px;
+  width: 40%;
+  background-image: url("./img/fDjwyLC88oO.png");
+  background-size: 100% 100%;
+}
+
+.microsoft{
+  height: 40px;
+  width: 30%;
+  background-image: url("./img/UbeIRgTpG-.png");
+  background-size: 100% 100%;
+}
+
+.secondary_words{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  color: #495057;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.secondary p{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #495057;
+  font-size: 13px;
+}
+
+.main_image_container{
+  width: 250px;
+  height: 515px;
+  z-index: 1000;
+  position: absolute;
+  top: 23px;
+  right: 60px;
+  display: flex;
+}
+
+#show{
+  animation-name: show;
+  animation-duration: 3s;
+  animation-delay: 0s;
+  animation-timing-function: ease;
+  display: block;
+}
+
+.main_image_container_img{
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  display: none;
+  position: absolute;
+}
+
+#hide{
+  display: none;
+}
+
+.popup{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 2000;
+}
+
+.popup_img{
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.popup_container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  transform: translate(-50%, -50%);
+}
+
+.popup_container_logo{
+  width: 120px;
+  height: 50px;
+}
+
+@keyframes show {
+  from { opacity: 0.5; }
+  to { opacity: 1; }
+}
+
+@media (max-width: 876px){
+  .main_image{
+    display: none;
+  }
+}
